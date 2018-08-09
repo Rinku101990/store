@@ -1,9 +1,9 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /lovegifts/
+RewriteBase /store/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /lovegifts/index.php [L]
+RewriteRule . /store/index.php [L]
 </IfModule>
 
