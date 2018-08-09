@@ -24,7 +24,7 @@ class Home extends CI_Controller {
 		// $this->load->view('includes/middel_header');
 		// $this->load->view('includes/navbar');
 		// $this->load->view('includes/banners');
-			$this->load->view('index');
+		$this->load->view('index');
 		// $this->load->view('includes/footer');
 	}
 	
