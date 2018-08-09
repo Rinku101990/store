@@ -20,12 +20,13 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		// $this->load->view("includes/header");
-		// $this->load->view('includes/middel_header');
-		// $this->load->view('includes/navbar');
-		// $this->load->view('includes/banners');
-		$this->load->view('index');
-		// $this->load->view('includes/footer');
+		$this->load->view("store/includes/header");
+		$this->load->view('store/includes/main_header');
+		$this->load->view('store/includes/navbar');
+		$this->load->view('store/includes/banners');
+		$this->load->view('store/home');
+		$this->load->view('store/includes/top_footer');
+		$this->load->view('store/includes/footer');
 	}
 	
 }
