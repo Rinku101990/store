@@ -1,3 +1,4 @@
+<?php $users = $this->session->userdata('logged_in');?>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
@@ -32,7 +33,7 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo base_url('assets/admin_assets/dist/img/user2-160x160.jpg');?>" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -45,7 +46,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo base_url('assets/admin_assets/dist/img/user3-128x128.jpg');?>" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         AdminLTE Design Team
@@ -218,21 +219,21 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <img src="<?php echo base_url('assets/admin_assets/dist/img/user2-160x160.jpg');?>" class="user-image" alt="">
+              <span class="hidden-xs"><?php echo $users['usrs_role'];?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="<?php echo base_url('assets/admin_assets/dist/img/user2-160x160.jpg');?>" class="img-circle" alt="">
 
                 <p>
-                  Alexander Pierce - Web Developer
-                  <small>Member since Nov. 2012</small>
+                <?php echo $users['usrs_role'];?> - Administrator
+                  <small>Member since Nov. <?php echo date('m,Y');?></small>
                 </p>
               </li>
               <!-- Menu Body -->
-              <li class="user-body">
+              <!-- <li class="user-body">
                 <div class="row">
                   <div class="col-xs-4 text-center">
                     <a href="#">Followers</a>
@@ -243,9 +244,9 @@
                   <div class="col-xs-4 text-center">
                     <a href="#">Friends</a>
                   </div>
-                </div>
+                </div> -->
                 <!-- /.row -->
-              </li>
+              <!-- </li> -->
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
@@ -258,9 +259,6 @@
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
         </ul>
       </div>
     </nav>
