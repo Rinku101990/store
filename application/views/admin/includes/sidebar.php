@@ -8,7 +8,7 @@
           <img src="<?php echo base_url('assets/admin_assets/dist/img/user2-160x160.jpg');?>" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Super Admin</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -46,7 +46,19 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url('admin/dashboard');?>"><i class="fa fa-circle-o"></i>Add/View Banners</a></li>
+            <li><a href="<?php echo base_url('admin/banners');?>"><i class="fa fa-circle-o"></i>View Banners</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>Manage Category</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/category');?>"><i class="fa fa-circle-o"></i>View Banners</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -58,7 +70,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url('admin/dashboard');?>"><i class="fa fa-circle-o"></i>Add Products</a></li>
+            <li><a href="<?php echo base_url('admin/products');?>"><i class="fa fa-circle-o"></i>View Products</a></li>
           </ul>
         </li>
       </ul>
